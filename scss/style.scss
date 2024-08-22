@@ -1,0 +1,203 @@
+@use 'variables';
+@use 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+main {
+    .first-section {
+        background-image: url("../images/bg-hero-mobile.svg");
+        background-repeat: no-repeat;
+        background-color: variables.$Very-Pale-Cyan;
+        width: 100vw;
+        padding-bottom: 3rem;
+            .first-section__header {
+                display: flex;
+                padding: 2rem 2rem;
+                justify-content: space-between;
+                figure {
+                    width: 12rem;
+                    img {
+                        width: 100%;
+                    }
+                }
+                button {
+                    background-color: variables.$Very-Pale-Cyan;
+                    color: variables.$Very-Dark-Cyan;
+                    border: none;
+                    padding: 0.5rem 0rem;
+                    border-radius: 2rem;
+                    font-size: 1.1rem;
+                    cursor: pointer;
+                    font-weight: 700;
+                    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.1);
+                    width: 10rem;
+                }
+            }
+            .first-section__text {
+                text-align: center;
+                margin-top: 7.8rem;
+                h1 {
+                    font-size: 2.4rem;
+                    padding: 0rem 5.5rem;
+                    line-height: 1.5;
+                    font-family: variables.$BodyFont;
+                }
+                p {
+                    font-size: 1.6rem;
+                    padding: 2rem 4rem;
+                    font-family: variables.$HeaderFont;
+                    line-height: 1.4;
+                }
+                button {
+                    background-color: variables.$Pink;
+                    color: variables.$Very-Pale-Cyan;
+                    border: none;
+                    padding: 1.4rem 0rem;
+                    border-radius: 2rem;
+                    font-size: 1.1rem;
+                    cursor: pointer;
+                    font-weight: 700;
+                    width: 24rem;
+                    margin-top: 1rem;
+                }
+                figure {
+                    width: 100vw;
+                    text-align: center;
+                    margin-top: 4rem;
+                    img {
+                        width: 80%;
+                    } 
+                }
+            }
+        }
+        .second-section {
+            padding: 3rem 2rem 0rem 2rem;
+            .second-section__caja {
+                border-radius: 1.5rem;
+                border: 1px solid variables.$Very-Pale-Cyan;
+                text-align: center;
+                margin: 3rem 0rem;
+                padding-bottom: 3rem;
+                box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.1);
+                figure {
+                    width: 25rem;
+                    margin: auto;
+                    padding: 5rem 0rem;
+                    img {
+                        width: 100%;
+                    }
+                }
+                h2 {
+                    font-family: variables.$BodyFont;
+                    margin: auto 1em 1em;
+                    font-size: 2rem;
+                }
+                p {
+                    margin: auto;
+                    padding-left: 1em;
+                    padding-right: 1em;
+                    width: 26rem;
+                    color: variables.$Grayish-Blue;
+                    font-size: 1.4rem;
+                    line-height: 1.5;
+                    font-family: variables.$HeaderFont;
+                }
+            }
+        .second-section__finish {
+            text-align: center;
+            padding: 3rem 0rem;
+            position: relative;
+            background-color: variables.$Very-Pale-Cyan;
+            margin: 0 auto;
+            transform: translate(0rem, 5.5rem);
+            border-radius: 1.5rem;
+            box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.1);
+            h2 {
+                margin: auto 1em 1em;
+                font-size: 1.8rem;
+                padding-bottom: 2rem;
+            }
+            button {
+                background-color: variables.$Pink;
+                color: variables.$Very-Pale-Cyan;
+                border: none;
+                padding: 1.4rem 0rem;
+                border-radius: 2rem;
+                font-size: 1.1rem;
+                cursor: pointer;
+                font-weight: 700;
+                width: 20rem;
+            }
+        }
+    }
+    .third-section {
+            background-color: variables.$Very-Dark-Cyan;
+            padding-top: 12rem;
+            padding-left: 2.5rem;
+            padding-right: 1.5rem;
+            color: variables.$Very-Pale-Cyan;
+            font-family: variables.$HeaderFont;
+            .third-section__logo {
+                background-color: variables.$Very-Pale-Cyan;
+                mask: url("../images/logo.svg") no-repeat;
+                -webkit-mask: url("../imagenes/logo.svg") no-repeat;
+                height: 3rem;
+                width: 17rem;
+                background-size: contain;
+                mask-size: contain;
+                -webkit-mask-size: contain;
+                align-items: center;
+            }
+            .third-section__informacion {
+                display: flex;
+                margin-top: 2rem;
+                figure {
+                    margin-right: 3rem;
+                }
+            p {
+                font-size: 1.6rem;
+            }
+        }
+        ul {
+            padding-top: 6rem;
+            li {
+                font-size: 1.6rem;
+                list-style: none;
+                padding-bottom: 1rem;
+            }
+        }
+        .third-section__iconos {
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            align-items: center;
+            gap: 30px;
+            .social-icon{
+                border: 1px solid variables.$Very-Pale-Cyan;
+                width: 28px;
+                height: 28px;
+                display: grid;
+                place-items: center;
+                border-radius: 50%;
+                font-size: 2em;
+            }
+        }
+        .third-section__derechos {
+            padding: 2rem 0;
+            text-align: center;
+        }
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
